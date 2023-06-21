@@ -5,14 +5,6 @@ It stands for "Web Audio Abstraction"
 
 ## Installation
 
-Building the sandbox tests:
-
-`npm install`, then:
-
-Build with`npm run build` or run a dev server `npm run serve`
-
-The `main.js` file is output to `dist/`
-
 This library is currently heavily under development, and intended to be 
 submoduled and consumed by another TypeScript project that uses a bundler 
 such as Webpack.
@@ -87,6 +79,14 @@ const convolver = masterBus.effects.push(ConvolverNode, {
 convolver.setWet(.2);
 convolver.setDry(.8);
 ```
+
+## Building Sandboxed Tests
+
+`npm install` and `npm run build`
+
+Run a dev server via `npm run serve`
+
+The bundle gets packed as `main.js` in `dist/`
 
 ## To-do
 - Test sends
