@@ -122,6 +122,10 @@ export class AudioEngine implements IDisposable {
         this.mSounds.clear();
         this.mSounds = null;
 
+        this.mSynths.forEach(synth => synth.dispose());
+        this.mSynths.clear();
+        this.mSynths = null;
+
         this.mContext = null;
     }
 
