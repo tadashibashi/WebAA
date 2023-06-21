@@ -5,12 +5,25 @@ It stands for "Web Audio Abstraction"
 
 ## Installation
 
+Building the sandbox tests:
+
+`npm install`, then:
+
+Build with`npm run build` or run a dev server `npm run serve`
+
+The `main.js` file is output to `dist/`
+
 This library is currently heavily under development, and intended to be 
 submoduled and consumed by another TypeScript project that uses a bundler 
-such as Webpack. Once extensive testing and a release is to be had, better
+such as Webpack.
+
+Using TypeScript module resolution `NodeNext` you can import the entire 
+library from the root directory of this repository.
+
+Once extensive testing and a release is to be had, better
 deployment practices may be considered.
 
-## Example Usage
+## Example Code
 
 Initialize the engine
 ```typescript

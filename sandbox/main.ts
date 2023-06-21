@@ -14,4 +14,3 @@ window.onload = async () => {
         music.play();
     });
 };
-
